@@ -8,4 +8,4 @@ Includes:
 - HTML
 - CSS
 
-![A screenshot of your theme](https://github.com/BrentMShanahan/Darkula-Web-syntax/Darkula.JPG)
+![A screenshot of your theme](https://github.com/BrentMShanahan/Darkula-Web-syntax/blob/master/Darkula.JPG)

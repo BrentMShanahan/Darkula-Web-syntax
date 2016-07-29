@@ -1,0 +1,56 @@
+@css-class-color: @light-orange;
+@css-property-name-color: @css-gray;
+@css-text-color: @css-gray;
+@css-terminator-color: @orange;
+@css-property-value-color: @lime-green;
+@css-constant-numeric-color: @blue;
+@css-elements-color: @css-gray;
+@css-elements-weight: normal;
+@css-unit-color: @css-gray;
+
+.editor {
+
+  .css {
+
+    &.class {
+      color: @css-class-color;
+    }
+
+    .property-name {
+      color: @css-property-name-color;
+    }
+
+    .separator {
+      color: @css-text-color;
+    }
+
+    .terminator {
+      color: @css-terminator-color;
+    }
+
+    .section {
+      color: @css-text-color;
+    }
+
+    .property-value {
+      color: @css-property-value-color;
+    }
+
+    .constant {
+      &.numeric {
+        color: @css-constant-numeric-color;
+      }
+    }
+
+    .elements {
+      color: @css-elements-color;
+      font-weight: @css-elements-weight;
+    }
+
+    .unit {
+      color: @css-unit-color;
+    }
+
+  }
+
+}

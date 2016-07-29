@@ -1,0 +1,36 @@
+@html-primary-orange: @light-orange;
+@html-primary-text: @pale-blue;
+@html-quoted-text: @lime-green;
+
+.editor {
+
+  .html {
+
+    .string {
+      color: @html-quoted-text;
+    }
+
+    .punctuation {
+      &.definition{
+        &.tag {
+          color: @html-primary-orange;
+        }
+        &.string {
+          color: @html-quoted-text;
+        }
+      }
+    }
+
+    .entity {
+      &.name.tag {
+        color: @html-primary-orange;
+      }
+
+      &.other.attribute-name {
+        color: @html-primary-text;
+      }
+    }
+
+  }
+
+}

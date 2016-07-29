@@ -1,0 +1,52 @@
+@ts-keyword: @orange;
+@ts-primary-string: @green;
+@ts-primary-text: @pale-blue;
+@ts-object-parameter: @purple;
+@ts-variable: @purple;
+@ts-method: @light-orange;
+
+.editor {
+
+  .ts {
+
+    .keyword.other {
+      color: @ts-keyword;
+      font-weight: bold;
+    }
+
+    .string {
+      color: @ts-primary-string;
+    }
+
+    .variable {
+      color: @ts-variable;
+    }
+
+    .variable.parameter {
+      color: @ts-primary-text;
+    }
+
+    .meta{
+      &.object.member {
+        color: @ts-object-parameter;
+      }
+      &.brace.square {
+        color: @ts-primary-text;
+      }
+      &.array.literal {
+        color: @ts-primary-text;
+      }
+    }
+
+    .entity{
+      &.name.class {
+        color: @ts-primary-text;
+      }
+      &.name.function {
+        color: @ts-method;
+      }
+    }
+
+  }
+
+}

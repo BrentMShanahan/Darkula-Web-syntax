@@ -1,0 +1,137 @@
+@js-storage-type-function-color: @orange;
+@js-storage-type-function-weight: bold;
+@js-storage-modifier-color: @orange;
+@js-storage-modifier-weight: bold;
+@js-comment-double-slash-color: @light-gray;
+@js-comment-double-slash-font-style: inherit;
+@js-comment-block-color: @light-gray;
+@js-comment-block-font-style: inherit;
+@js-comment-block-documentation-color: @green;
+@js-comment-block-documentation-font-style: normal;
+@js-operator-color: @orange;
+@js-delimiter-comma-color: @orange;
+@js-delimiter-period-color: @pale-blue;
+@js-support-class-color: @light-orange;
+@js-function-name-color: @light-orange;
+@js-punctuation-terminator-color: @orange;
+@js-entity-name-type: @purple;
+@js-string-quoted: @green;
+@js-keyword-control: @orange;
+@js-variable: @orange;
+@js-variable-object: @pale-blue;
+@js-variable-property: @purple;
+@js-constant: @pale-blue;
+
+.editor .js {
+
+  .storage.type.function {
+    color: @js-storage-type-function-color;
+    font-weight: @js-storage-type-function-weight;
+  }
+
+  .storage.modifier {
+    color: @js-storage-modifier-color;
+    font-weight: @js-storage-modifier-weight;
+  }
+
+  .comment {
+
+    &.double-slash {
+      color: @js-comment-double-slash-color;
+      font-style: @js-comment-double-slash-font-style;
+
+      .punctuation {
+        color: @js-comment-double-slash-color;
+        font-style: @js-comment-double-slash-font-style;
+      }
+    }
+
+    &.block {
+      color: @js-comment-block-color;
+      font-style: @js-comment-block-font-style;
+
+      .punctuation {
+        color: @js-comment-block-color;
+        font-style: @js-comment-block-font-style;
+      }
+
+      &.documentation {
+        color: @js-comment-block-documentation-color;
+        font-style: @js-comment-block-documentation-font-style;
+
+        .punctuation {
+          color: @js-comment-block-documentation-color;
+          font-style: @js-comment-block-documentation-font-style;
+        }
+      }
+    }
+
+  }
+
+  .operator {
+    color: @js-operator-color;
+  }
+
+  .delimiter {
+
+    &.comma {
+      color: @js-delimiter-comma-color;
+    }
+
+    &.period {
+      color: @js-delimiter-period-color;
+    }
+
+  }
+
+  .support.class {
+    color: @js-support-class-color;
+  }
+
+  .function {
+    .name {
+      color: @js-function-name-color;
+    }
+  }
+
+  .punctuation.terminator {
+    color: @js-punctuation-terminator-color;
+  }
+
+  .entity {
+    &.name.function {
+      color: @js-function-name-color;
+    }
+    &.name.type {
+      color: @js-entity-name-type;
+      text-decoration: none;
+    }
+  }
+
+  .keyword {
+    &.control {
+      color: @js-keyword-control;
+    }
+  }
+
+  .variable {
+    color: @js-variable;
+
+    &.other.object {
+      color: @js-variable-object;
+    }
+
+    &.other.property {
+      color: @js-variable-property;
+    }
+  }
+
+  .constant {
+    color: @js-constant
+  }
+
+  .string {
+    color: @js-string-quoted;
+  }
+
+}

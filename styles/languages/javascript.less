@@ -21,6 +21,7 @@
 @js-variable-object: @pale-blue;
 @js-variable-property: @purple;
 @js-constant: @pale-blue;
+@js-constant-language-boolean: @orange;
 
 .editor .js {
 
@@ -128,6 +129,9 @@
 
   .constant {
     color: @js-constant
+    &.language.boolean {
+      color: @js-constant-language-boolean
+    }
   }
 
   .string {

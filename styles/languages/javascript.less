@@ -23,44 +23,44 @@
 @js-constant: @pale-blue;
 @js-constant-language-boolean: @orange;
 
-.editor .js {
+.editor .sintax--js {
 
-  .storage.type.function {
+  .sintax--storage.sintax--type.sintax--function {
     color: @js-storage-type-function-color;
     font-weight: @js-storage-type-function-weight;
   }
 
-  .storage.modifier {
+  .sintax--storage.sintax--modifier {
     color: @js-storage-modifier-color;
     font-weight: @js-storage-modifier-weight;
   }
 
-  .comment {
+  .sintax--comment {
 
-    &.double-slash {
+    &.sintax--double-slash {
       color: @js-comment-double-slash-color;
       font-style: @js-comment-double-slash-font-style;
 
-      .punctuation {
+      .sintax--punctuation {
         color: @js-comment-double-slash-color;
         font-style: @js-comment-double-slash-font-style;
       }
     }
 
-    &.block {
+    &.sintax--block {
       color: @js-comment-block-color;
       font-style: @js-comment-block-font-style;
 
-      .punctuation {
+      .sintax--punctuation {
         color: @js-comment-block-color;
         font-style: @js-comment-block-font-style;
       }
 
-      &.documentation {
+      &.sintax--documentation {
         color: @js-comment-block-documentation-color;
         font-style: @js-comment-block-documentation-font-style;
 
-        .punctuation {
+        .sintax--punctuation {
           color: @js-comment-block-documentation-color;
           font-style: @js-comment-block-documentation-font-style;
         }
@@ -69,72 +69,72 @@
 
   }
 
-  .operator {
+  .sintax--operator {
     color: @js-operator-color;
   }
 
-  .delimiter {
+  .sintax--delimiter {
 
-    &.comma {
+    &.sintax--comma {
       color: @js-delimiter-comma-color;
     }
 
-    &.period {
+    &.sintax--period {
       color: @js-delimiter-period-color;
     }
 
   }
 
-  .support.class {
+  .sintax--support.sintax--class {
     color: @js-support-class-color;
   }
 
-  .function {
-    .name {
+  .sintax--function {
+    .sintax--name {
       color: @js-function-name-color;
     }
   }
 
-  .punctuation.terminator {
+  .sintax--punctuation.sintax--terminator {
     color: @js-punctuation-terminator-color;
   }
 
-  .entity {
-    &.name.function {
+  .sintax--entity {
+    &.sintax--name.sintax--function {
       color: @js-function-name-color;
     }
-    &.name.type {
+    &.sintax--name.sintax--type {
       color: @js-entity-name-type;
       text-decoration: none;
     }
   }
 
-  .keyword {
-    &.control {
+  .sintax--keyword {
+    &.sintax--control {
       color: @js-keyword-control;
     }
   }
 
-  .variable {
+  .sintax--variable {
     color: @js-variable;
 
-    &.other.object {
+    &.sintax--other.sintax--object {
       color: @js-variable-object;
     }
 
-    &.other.property {
+    &.sintax--other.sintax--property {
       color: @js-variable-property;
     }
   }
 
-  .constant {
+  .sintax--constant {
     color: @js-constant;
-    &.language.boolean{
+    &.sintax--language.sintax--boolean{
       color: @js-constant-language-boolean
     }
   }
 
-  .string {
+  .sintax--string {
     color: @js-string-quoted;
   }
 

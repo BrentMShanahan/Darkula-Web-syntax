@@ -7,42 +7,42 @@
 
 .editor {
 
-  .ts {
+  .sintax--ts {
 
-    .keyword.other {
+    .sintax--keyword.sintax--other {
       color: @ts-keyword;
       font-weight: bold;
     }
 
-    .string {
+    .sintax--string {
       color: @ts-primary-string;
     }
 
-    .variable {
+    .sintax--variable {
       color: @ts-variable;
     }
 
-    .variable.parameter {
+    .sintax--variable.sintax--parameter {
       color: @ts-primary-text;
     }
 
-    .meta{
-      &.object.member {
+    .sintax--meta{
+      &.sintax--object.sintax--member {
         color: @ts-object-parameter;
       }
-      &.brace.square {
+      &.sintax--brace.sintax--square {
         color: @ts-primary-text;
       }
-      &.array.literal {
+      &.sintax--array.sintax--literal {
         color: @ts-primary-text;
       }
     }
 
-    .entity{
-      &.name.class {
+    .sintax--entity{
+      &.sintax--name.sintax--class {
         color: @ts-primary-text;
       }
-      &.name.function {
+      &.sintax--name.sintax--function {
         color: @ts-method;
       }
     }

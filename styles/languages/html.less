@@ -4,29 +4,29 @@
 
 .editor {
 
-  .sintax--html {
+  .syntax--html {
 
-    .sintax--string {
+    .syntax--string {
       color: @html-quoted-text;
     }
 
-    .sintax--punctuation {
-      &.sintax--definition{
-        &.sintax--tag {
+    .syntax--punctuation {
+      &.syntax--definition{
+        &.syntax--tag {
           color: @html-primary-orange;
         }
-        &.sintax--string {
+        &.syntax--string {
           color: @html-quoted-text;
         }
       }
     }
 
-    .sintax--entity {
-      &.sintax--name.sintax--tag {
+    .syntax--entity {
+      &.syntax--name.syntax--tag {
         color: @html-primary-orange;
       }
 
-      &.sintax--other.sintax--attribute-name {
+      &.syntax--other.syntax--attribute-name {
         color: @html-primary-text;
       }
     }

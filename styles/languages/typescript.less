@@ -1,3 +1,4 @@
+@ts-block: @light-gray;
 @ts-keyword: @orange;
 @ts-primary-string: @green;
 @ts-primary-text: @pale-blue;
@@ -7,42 +8,157 @@
 
 .editor {
 
-  .sintax--ts {
+  .syntax--ts {
+    color: @ts-block;
 
-    .sintax--keyword.sintax--other {
-      color: @ts-keyword;
-      font-weight: bold;
+    .syntax--punctuation {
+      color: @ts-primary-text;
+
+      &.syntax--terminator {
+        color: @ts-keyword;
+      }
+
+      &.syntax--separator {
+        color: @ts-keyword;
+
+        &.syntax--key-value {
+          color: @ts-primary-text;
+        }
+      }
+
+      &.syntax--block {
+        color: @ts-primary-text;
+      }
     }
 
-    .sintax--string {
-      color: @ts-primary-string;
+    &.syntax--comment {
+      color: @ts-block;
+
+      &.syntax--documentation {
+        color: @ts-primary-string;
+      }
     }
 
-    .sintax--variable {
-      color: @ts-variable;
-    }
-
-    .sintax--variable.sintax--parameter {
+    .syntax--brace {
       color: @ts-primary-text;
     }
 
-    .sintax--meta{
-      &.sintax--object.sintax--member {
-        color: @ts-object-parameter;
+    .syntax--storage {
+      color: @ts-keyword;
+    }
+
+    .syntax--keyword {
+      color: @ts-keyword;
+
+      &.syntax--other {
+        color: @ts-keyword;
+        font-weight: bold;
       }
-      &.sintax--brace.sintax--square {
+
+      &.syntax--operator {
         color: @ts-primary-text;
       }
-      &.sintax--array.sintax--literal {
+
+      &.syntax--assignment {
         color: @ts-primary-text;
       }
     }
 
-    .sintax--entity{
-      &.sintax--name.sintax--class {
+    .syntax--boolean {
+      color: @ts-keyword;
+    }
+
+    .syntax--import {
+      color: @ts-keyword;
+    }
+
+    .syntax--modifier {
+      color: @ts-keyword;
+    }
+
+    .syntax--method {
+      color: @ts-method;
+    }
+
+    .syntax--class {
+      color:@ts-keyword;
+
+      &.syntax--todo {
+        color: @lime-green;
+      }
+    }
+
+    .syntax--string {
+      color: @ts-primary-string;
+    }
+
+    .syntax--support {
+      color: @ts-primary-text;
+
+      &.syntax--function {
+        color: @ts-method;
+      }
+
+      &.syntax--primitive {
+        color: @ts-keyword;
+      }
+    }
+
+    .syntax--variable {
+      color: @ts-primary-text;
+
+      &.syntax--property {
+        color: @ts-variable;
+      }
+
+      &.syntax--this {
+        color:@ts-keyword;
+      }
+
+      &.syntax--object {
         color: @ts-primary-text;
       }
-      &.sintax--name.sintax--function {
+    }
+
+    .syntax--variable.syntax--parameter {
+      color: @ts-primary-text;
+    }
+
+    .syntax--meta{
+      color: @ts-primary-text;
+
+      &.syntax--object-literal {
+        color: @ts-variable;
+
+        &.syntax--function {
+          color: @ts-method;
+        }
+
+        &.syntax--key {
+          color: @ts-variable;
+        }
+      }
+
+      &.syntax--object.syntax--member {
+        color: @ts-object-parameter;
+      }
+      &.syntax--brace.syntax--square {
+        color: @ts-primary-text;
+      }
+      &.syntax--array.syntax--literal {
+        color: @ts-primary-text;
+      }
+    }
+
+    .syntax--entity {
+      color: @ts-primary-text;
+
+      &.syntax--type {
+        color: @ts-primary-text;
+        text-decoration: none;
+      }
+
+      &.syntax--function {
         color: @ts-method;
       }
     }

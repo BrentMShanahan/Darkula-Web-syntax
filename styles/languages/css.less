@@ -10,45 +10,52 @@
 
 .editor {
 
-  .sintax--css {
+  .syntax--css {
 
-    &.sintax--class {
+    &.syntax--class {
       color: @css-class-color;
     }
 
-    .sintax--property-name {
+    .syntax--property-name {
       color: @css-property-name-color;
     }
 
-    .sintax--separator {
+    .syntax--separator {
       color: @css-text-color;
     }
 
-    .sintax--terminator {
+    .syntax--terminator {
       color: @css-terminator-color;
     }
 
-    .sintax--section {
+    .syntax--section {
       color: @css-text-color;
     }
 
-    .sintax--property-value {
+    .syntax--property-value {
       color: @css-property-value-color;
     }
 
-    .sintax--constant {
-      &.sintax--numeric {
+    .syntax--constant {
+      &.syntax--numeric {
         color: @css-constant-numeric-color;
       }
     }
 
-    .sintax--elements {
+    .syntax--elements {
       color: @css-elements-color;
       font-weight: @css-elements-weight;
     }
 
-    .sintax--unit {
+    .syntax--unit {
       color: @css-unit-color;
+    }
+
+    .syntax--keyword {
+
+      &.syntax--unit {
+        color: @css-property-value-color;
+      }
     }
 
   }
